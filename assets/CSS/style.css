@@ -82,8 +82,9 @@ body {
 }
 
 /* Main */
-.img-box img {
-    height: 350px;
+
+.main {
+    min-height: 450px;
 }
 
 .badges-container {
@@ -185,9 +186,6 @@ a {
 }
 
 @media screen and (max-width:430px) {
-    .img-box img {
-        height: 300px;
-    }
 
     .txt-title {
         font-size: 35px;
