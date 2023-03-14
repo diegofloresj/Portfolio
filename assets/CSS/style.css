@@ -1,0 +1,214 @@
+/* 
+CDN Fonts
+font-family: 'Indie Flower', cursive;
+font-family: 'Sticky Memos', sans-serif;
+
+Fonts Google
+font-family: 'Handlee', cursive;
+font-family: 'Indie Flower', cursive;
+font-family: 'Mynerve', cursive;
+font-family: 'Rock Salt', cursive;
+*/
+
+body {
+    background: rgb(20, 20, 20);
+}
+
+/* Scrollbar Custom */
+*::-webkit-scrollbar {
+    width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+    background: rgb(20, 20, 20);
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #ffc107;
+    border-radius: 20px;
+}
+
+* {
+    text-decoration: none !important;
+}
+
+/* General Styles */
+.txt-title {
+    font-size: 3.5rem;
+    font-family: 'Indie Flower', cursive;
+    color: white;
+}
+
+.txt-desc {
+    font-size: 1.9rem;
+    color: rgb(177, 177, 177);
+    text-align: justify;
+    font-family: 'Handlee', cursive;
+}
+
+
+/* Nav */
+.nav-link {
+    font-size: 16px;
+    font-family: 'Handlee', cursive;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+}
+
+.nav-link:focus::after,
+.nav-link:hover::after {
+    width: 100%;
+    left: 0%;
+}
+
+.nav-link::after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+}
+
+/* Main */
+.img-box img {
+    height: 350px;
+}
+
+.badges-container {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+}
+
+/* Pyoyects */
+.card-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.btn-group i,
+a {
+    display: flex;
+    justify-content: center;
+}
+
+.proys-btn {
+    font-size: 16px;
+    font-family: 'Handlee', cursive;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+}
+
+.proys-btn:focus::after,
+.proys-btn:hover::after {
+    width: 100%;
+    left: 0%;
+}
+
+.proys-btn::after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+}
+
+.link-proys i{
+    margin-left: 5px;
+}
+
+/* Contact */
+.rs-btn {
+    font-size: 30px;
+    font-family: inherit;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+}
+
+.rs-btn:focus::after,
+.rs-btn:hover::after {
+    width: 100%;
+    left: 0%;
+}
+
+.rs-btn::after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+}
+
+/* Footer */
+.txt-footer {
+    font-style: 10px;
+    color: #a0a0a0;
+}
+
+@media screen and (max-width:430px) {
+    .img-box img {
+        height: 300px;
+    }
+
+    .txt-title {
+        font-size: 35px;
+    }
+
+    .txt-desc {
+        font-style: 15px;
+    }
+
+    .icons-box .btn a {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .img-area .contact-img {
+        margin-top: 15px;
+    }
+
+    .badges-box {
+        display: flex;
+        justify-content: center;
+    }
+
+}
